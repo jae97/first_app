@@ -12,13 +12,13 @@ df = pd.DataFrame({
 df
 
 if st.checkbox('Show dataframe'):
-    chart_data = pd.DataFrame(
-       np.random.randn(20, 3),
-       columns=['a', 'b', 'c'])
+  chart_data = pd.DataFrame(
+     np.random.randn(20, 3),
+     columns=['a', 'b', 'c'])
 
     chart_data
 
-st.line_chart(chart_data)
+    st.line_chart(chart_data)
 
 map_data = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],

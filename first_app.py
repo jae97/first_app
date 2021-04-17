@@ -11,7 +11,7 @@ df = pd.DataFrame({
 
 df
 
-if st.checkbox('Show dataframe'):
+if st.sidebar.checkbox('Show dataframe'):
   chart_data = pd.DataFrame(
      np.random.randn(20, 3),
      columns=['a', 'b', 'c'])
